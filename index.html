@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript 20-38</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sayl">
+            <h3>Saylani<span> Calc</span></h3>
+        </div>
+        <div class="inp">
+            <p id="res1"></p>
+            <input type="text" name="" id="res">
+        </div>
+        <div class="clear">
+            <button onclick="clearResult()">C</button>
+            <button onclick="getNum('%')">%</button>
+            <button class="divide"  onclick="getNum('/')">÷</button>
+        </div>
+        <div class="mainbtn">
+            <button class="mrgn1" onclick="getNum('7')">7</button>
+            <button onclick="getNum('8')">8</button>
+            <button class="mrgn" onclick="getNum('9')">9</button>
+            <button  class="divide" onclick="getNum('*')">X</button>
+        </div>
+        <div class="mainbtn">
+            <button class="mrgn1" onclick="getNum('4')">4</button>
+            <button onclick="getNum('5')">5</button>
+            <button class="mrgn" onclick="getNum('6')">6</button>
+            <button  class="divide" onclick="getNum('-')">-</button>
+        </div>
+        <div class="mainbtn">
+            <button class="mrgn1" onclick="getNum('1')">1</button>
+            <button onclick="getNum('2')">2</button>
+            <button onclick="getNum('3')" class="mrgn">3</button>
+            <button  class="divide" onclick="getNum('+')">+</button>
+        </div>
+        <div class="clear">
+            <button onclick="getNum('0')">0</button>
+            <button  onclick="getNum('.')">.</button>
+            <button id="equal" class="divide" onclick="getResult()">=</button>
+        </div>
+    </div>
+</body>
+</html>
