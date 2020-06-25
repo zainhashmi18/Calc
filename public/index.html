@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="main">
+       
         <div class="sayl">
             <h3>Saylani<span> Calc</span></h3>
         </div>
@@ -17,34 +18,38 @@
             <p id="res1"></p>
             <input type="text" name="" id="res">
         </div>
-        <div class="clear">
-            <button onclick="clearResult()">C</button>
-            <button onclick="getNum('%')">%</button>
-            <button class="divide"  onclick="getNum('/')">÷</button>
+        <div class="btnclass">
+        <div class="mainbtn">
+            <button class="colchange" onclick="clearResult()">C</button>
+            <button class="colchange" onclick="getNum('%')">%</button>
+            <button class="colchange" onclick="getNum('22/7')">𝜋</button>
+            <button class="colchange"  onclick="getNum('/')">÷</button>
         </div>
         <div class="mainbtn">
-            <button class="mrgn1" onclick="getNum('7')">7</button>
+            <button class="" onclick="getNum('7')">7</button>
             <button onclick="getNum('8')">8</button>
-            <button class="mrgn" onclick="getNum('9')">9</button>
-            <button  class="divide" onclick="getNum('*')">X</button>
+            <button class="" onclick="getNum('9')">9</button>
+            <button  class="colchange" onclick="getNum('*')">X</button>
         </div>
         <div class="mainbtn">
-            <button class="mrgn1" onclick="getNum('4')">4</button>
+            <button class="" onclick="getNum('4')">4</button>
             <button onclick="getNum('5')">5</button>
-            <button class="mrgn" onclick="getNum('6')">6</button>
-            <button  class="divide" onclick="getNum('-')">-</button>
+            <button class="" onclick="getNum('6')">6</button>
+            <button  class="colchange" onclick="getNum('-')">-</button>
         </div>
-        <div class="mainbtn">
-            <button class="mrgn1" onclick="getNum('1')">1</button>
+        <button id="equal" class="colchange" onclick="getResult()">=</button> 
+        <div class="mainbtn1">
+            <button class="" onclick="getNum('1')">1</button>
             <button onclick="getNum('2')">2</button>
             <button onclick="getNum('3')" class="mrgn">3</button>
-            <button  class="divide" onclick="getNum('+')">+</button>
+            
         </div>
-        <div class="clear">
+        <div class="mainbtn1">
             <button onclick="getNum('0')">0</button>
             <button  onclick="getNum('.')">.</button>
-            <button id="equal" class="divide" onclick="getResult()">=</button>
+            <button  class="colchange" onclick="getNum('+')">+</button>
         </div>
+    </div>
     </div>
 </body>
 </html>

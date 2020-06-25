@@ -1,7 +1,7 @@
 function getNum(num){
     var result=document.getElementById("res");
     result.value+=num;
-    document.getElementById('res1').innerHTML ="Last Digit: "+result.value;
+    document.getElementById('res1').innerHTML =result.value;
 }
 function clearResult(){
     var result=document.getElementById("res");
