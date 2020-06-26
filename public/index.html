@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
+
 <body>
-    <div class="main">
-       
-        <div class="sayl">
-            <h3>Saylani<span> Calc</span></h3>
+    <div id="main">
+
+        <div id="sayl">
+            <a onclick="day()"><i class="sunclass far fa-sun"></i></a>
+            <a onclick="night()"><i class="nightclass far fa-moon"></i></a>
+            <h3 id="h3class">Saylani<span> Calc</span></h3>
         </div>
         <div class="inp">
             <p id="res1"></p>
             <input type="text" name="" id="res">
         </div>
         <div class="btnclass">
-        <div class="mainbtn">
-            <button class="colchange" onclick="clearResult()">C</button>
-            <button class="colchange" onclick="getNum('%')">%</button>
-            <button class="colchange" onclick="getNum('22/7')">𝜋</button>
-            <button class="colchange"  onclick="getNum('/')">÷</button>
+            <div class="mainbtn">
+                <button class="colchange" onclick="clearResult()">C</button>
+                <button class="colchange" onclick="getNum('%')">%</button>
+                <button class="colchange" onclick="getNum('22/7')">𝜋</button>
+                <button class="colchange" onclick="getNum('/')">÷</button>
+            </div>
+            <div class="mainbtn">
+                <button class="" onclick="getNum('7')">7</button>
+                <button onclick="getNum('8')">8</button>
+                <button class="" onclick="getNum('9')">9</button>
+                <button class="colchange" onclick="getNum('*')">X</button>
+            </div>
+            <div class="mainbtn">
+                <button class="" onclick="getNum('4')">4</button>
+                <button onclick="getNum('5')">5</button>
+                <button class="" onclick="getNum('6')">6</button>
+                <button class="colchange" onclick="getNum('-')">-</button>
+            </div>
+            <button id="equal" class="colchange" onclick="getResult()">=</button>
+            <div class="mainbtn1">
+                <button class="" onclick="getNum('1')">1</button>
+                <button onclick="getNum('2')">2</button>
+                <button onclick="getNum('3')" class="mrgn">3</button>
+
+            </div>
+            <div class="mainbtn1">
+                <button onclick="getNum('0')">0</button>
+                <button onclick="getNum('.')">.</button>
+                <button class="colchange" onclick="getNum('+')">+</button>
+            </div>
         </div>
-        <div class="mainbtn">
-            <button class="" onclick="getNum('7')">7</button>
-            <button onclick="getNum('8')">8</button>
-            <button class="" onclick="getNum('9')">9</button>
-            <button  class="colchange" onclick="getNum('*')">X</button>
-        </div>
-        <div class="mainbtn">
-            <button class="" onclick="getNum('4')">4</button>
-            <button onclick="getNum('5')">5</button>
-            <button class="" onclick="getNum('6')">6</button>
-            <button  class="colchange" onclick="getNum('-')">-</button>
-        </div>
-        <button id="equal" class="colchange" onclick="getResult()">=</button> 
-        <div class="mainbtn1">
-            <button class="" onclick="getNum('1')">1</button>
-            <button onclick="getNum('2')">2</button>
-            <button onclick="getNum('3')" class="mrgn">3</button>
-            
-        </div>
-        <div class="mainbtn1">
-            <button onclick="getNum('0')">0</button>
-            <button  onclick="getNum('.')">.</button>
-            <button  class="colchange" onclick="getNum('+')">+</button>
-        </div>
-    </div>
     </div>
 </body>
+
 </html>
